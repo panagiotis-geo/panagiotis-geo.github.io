@@ -1,80 +1,176 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-<style type="text/css">
-h3 {
-    color: #FFFFFF;
-}
-h4 {
-    color: #E4E4E4;
-}
-body,td,th {
-    color: #E3E2E2;
-}
-a:link {
-    color: #E3E2E2;
-    text-decoration: none;
-}
-a:hover {
-    color: #E3E2E2;
-    text-decoration: underline;
-}
-a:visited {
-    text-decoration: none;
-    color: #E3E2E2;
-}
-a:active {
-    text-decoration: none;
-}
-</style>
-</head>
-<center>
-<body bgcolor="#292929"><table width="1200" border="0" cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <td width="38">&nbsp;</td>
-      <td width="199" align="left"><h3><a href="https://panagiotis-geo.github.io">Panagiotis Georgiadis</a></h3></td>
-      <td width="193">&nbsp;</td>
-      <td width="85">&nbsp;</td>
-      <td width="438">&nbsp;</td>
-      <td width="143" align="center"><h4>&nbsp;</h4></td>
-      <td width="69" align="center"><h4>CV</h4></td>
-      <td width="35">&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><img src="images/me_removed.jpg" alt="" width="158" height="200" align="absmiddle"/></td>
-      <td colspan="5"><p>I am a PhD researcher at the National Centre for Text Mining (NaCTeM). My interest is in Event Extraction, a subtask of Natural Language Processing (NLP).</p></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><p>PhD research at  NaCTeM</p></td>
-      <td colspan="5" align="center"><h3>Publications</h3></td>
-      <td align="center">&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><p><a href="https://github.com/panagiotis-geo" target="_blank">Github</a></p></td>
-      <td colspan="5"><p>Espinosa K, Georgiadis P, Christopoulou F, Ju M, Miwa M, Ananiadou S. Comparing neural models for nested and overlapping biomedical event detection. <em>BMC Bioinformatics</em>. 2022;23(1):211. Published 2022 Jun 2. doi:<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-022-04746-3" target="_blank">10.1186/s12859-022-04746-3</a></p></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><p><a href="https://www.linkedin.com/in/panagiotis-georgiadis-5b225027b/" target="_blank">Linkedin</a></p></td>
-      <td colspan="5"><p>Vasilakes J, Georgiadis P, Nguyen NTH, Miwa M, Ananiadou S. Contextualized medication event extraction with levitated markers. <em>J Biomed Inform</em>. 2023;141:104347. doi:<a href="https://www.sciencedirect.com/science/article/pii/S1532046423000680?via%3Dihub" target="_blank">10.1016/j.jbi.2023.104347</a></p></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><p><a href="https://github.com/panagiotis-geo"></a><a href="https://scholar.google.com/citations?user=N3hqTi0AAAAJ&hl=en" target="_blank">Google Scholar</a></p></td>
-      <td colspan="6">&nbsp;</td>
-    </tr>
-  </tbody>
-</table>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Artistic Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(to right, #333, #444);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #555;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+        nav .left, nav .right {
+            display: flex;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #666;
+            border-radius: 5px;
+        }
+        main {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        test {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content {
+            flex: 3;
+            display: flex;
+            align-items: flex-start;
+        }
+        .pub {
+            flex: 3;
+            display: block;
+            align-items: flex-start;
+        }
+        .about-me {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .photo {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .photo img {
+            border-radius: 50%;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            max-width: 250px;
+        }
 
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .social-icons {
+            margin: 20px 0;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ddd;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .publications {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .publications h2 {
+            margin-top: 0;
+        }
+        .publications ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .publications li {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a href="">Panagiotis Georgiadis</a>
+        </div>
+        <div class="right">
+            <a href="#">CV</a>
+        </div>
+    </nav>
+    <main>
+        <div class="content">
+            <div class="about-me">
+                <section>
+                    <h2>About Me</h2>
+                    <p>I am a PhD researcher at the National Centre for Text Mining (<a href="https://www.nactem.ac.uk/" target="_blank">NaCTeM</a>).</p>
+                    <p>My interest is in Event Extraction, a subtask of Natural Language Processing (NLP).</p>
+                </section>
+            </div>
+            <div class="photo">
+                <img src="images/me_removed.jpg" alt="panagiotis">
+            </div>
+        
+
+        </div>
+    </main>
+    <test>
+        <div class="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>Vasilakes J, Georgiadis P, Nguyen NTH, Miwa M, Ananiadou S. Contextualized medication event extraction with levitated markers. <em>J Biomed Inform</em>. 2023;141:104347. doi:<a href="https://www.sciencedirect.com/science/article/pii/S1532046423000680?via%3Dihub" target="_blank">10.1016/j.jbi.2023.104347</a></li>
+                <li>Espinosa K, Georgiadis P, Christopoulou F, Ju M, Miwa M, Ananiadou S. Comparing neural models for nested and overlapping biomedical event detection. <em>BMC Bioinformatics</em>. 2022;23(1):211. Published 2022 Jun 2. doi:<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-022-04746-3" target="_blank">10.1186/s12859-022-04746-3</a></li>
+            </ul>
+        </div>
+
+
+    </test>
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/panagiotis-geo" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://scholar.google.com/citations?user=N3hqTi0AAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://www.linkedin.com/in/panagiotis-georgiadis-5b225027b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2024 My Webpage. All rights reserved.</p>
+    </footer>
 </body>
-</center>
 </html>
